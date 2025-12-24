@@ -273,7 +273,7 @@ CREATE POLICY "Admins can see all wallets" ON wallets FOR SELECT USING (get_my_c
 CREATE POLICY "Users can see their own trips" ON trips FOR SELECT USING (auth.uid() = driver_id);
 CREATE POLICY "Admins can see all trips" ON trips FOR SELECT USING (get_my_claim('role') = '"admin"');
 
--- Policies for 'settlements' and 'settlement_details'
+-- Policies for 'settlements' and 'settlement_details.'
 -- Assuming drivers can see all settlement history, but only their details
 CREATE POLICY "All users can see settlements" ON settlements FOR SELECT USING (true);
 CREATE POLICY "Users can see their own settlement details" ON settlement_details FOR SELECT USING (auth.uid() = driver_id);
@@ -340,13 +340,13 @@ The UI should be clean, modern, and professional, with subtle rainbow accents.
 ## 10. Sample Test Credentials
 
 -   **Driver**:
-    -   **Email**: `driver@test.com`
+    -   **Email**: `driver@test.com` or `Create by register`
     -   **Password**: `password123`
 -   **Admin**:
-    -   **Email**: `admin@test.com`
+    -   **Email**: `admin@test.com` or `Contact Administrator for Admin`
     -   **Password**: `password123`
 
-To create the admin user, you would first sign them up as a regular user, and then manually update their role to `admin` in the `profiles` table in the Supabase database.
+To create the admin user, you would first sign them up as a regular user and then manually update their role to `admin` in the `profiles` table in the Supabase database.
 
 ## 11. 5-Line Explanation for Interview
 
