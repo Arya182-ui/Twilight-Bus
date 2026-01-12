@@ -1,7 +1,19 @@
 
 # Twilight Bus: Indian Driver Payments Platform
 
-> **A modern, professional, and Indian-localized platform for managing driver payments, settlements, and admin operations.**
+**A modern, professional, and Indian-localized platform for managing driver payments, settlements, and admin operations.**
+
+---
+
+
+<div align="center">
+  <p><strong>🔒 Archived on 12 January 2026</strong></p>
+  <p>
+    This project is no longer under active development.<br>
+    The repository remains available for reference and reuse.<br>
+    For questions or collaboration, please contact the maintainer.
+  </p>
+</div>
 
 ---
 
